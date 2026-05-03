@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abubakari Logistics | Premium Road Freight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* --- NEW ANIMATION ENGINE --- */
+        
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        
+        .reveal-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Continuous Floating Animation */
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        /* --- PRESERVING YOUR ORIGINAL STYLES --- */
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
+        .glass {
+            background: rgba(5, 5, 5, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        
+        html,
+        body {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .no-scrollbar::-webkit-scrollbar {
+            display: none !important;
+        }
+        
+        .no-scrollbar {
+            -ms-overflow-style: none !important;
+            scrollbar-width: none !important;
+        }
+        
+        @keyframes ping {
+            75%,
+            100% {
+                transform: scale(1.6);
+                opacity: 0;
+            }
+        }
+        
+        .animate-ping-slow {
+            animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+        /* Enhanced Desktop Hovers */
+        
+        @media (min-width: 1024px) {
+            .hover-lift:hover {
+                transform: translateY(-12px) scale(1.02);
+                background: rgba(255, 255, 255, 0.05) !important;
+                border-color: rgba(234, 179, 8, 0.4) !important;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            }
+            .group:hover .icon-bounce {
+                transform: rotate(12deg) scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#050505] text-white selection:bg-yellow-500 selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 lg:px-12 py-3 lg:py-4">
+            <div class="flex items-center justify-between gap-2">
+                <a href="#home" class="flex items-center flex-shrink-0 gap-2 lg:gap-4 group">
+                    <img src="assets/images/logo.jpg" alt="Abubakari Logistics" class="h-8 w-auto lg:h-16 object-contain transition-transform group-hover:scale-110">
+                    <div class="hidden lg:flex flex-col">
+                        <span class="text-white font-bold text-xl uppercase tracking-tight">
+                            Abubakari <span class="text-yellow-500">Logistics</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.4em] text-slate-400 uppercase font-medium">Reliability Delivered</span>
+                    </div>
+                </a>
+
+                <div class="flex-1 flex items-center justify-center space-x-4 lg:space-x-10 overflow-x-auto no-scrollbar px-2">
+                    <a href="#home" class="text-[9px] lg:text-[11px] uppercase tracking-widest font-bold text-white hover:text-yellow-500 transition-colors whitespace-nowrap">Home</a>
+                    <a href="#about" class="text-[9px] lg:text-[11px] uppercase tracking-widest font-bold text-white hover:text-yellow-500 transition-colors whitespace-nowrap">About</a>
+                    <a href="#services" class="text-[9px] lg:text-[11px] uppercase tracking-widest font-bold text-white hover:text-yellow-500 transition-colors whitespace-nowrap">Fleet</a>
+                    <a href="#contact" class="text-[9px] lg:text-[11px] uppercase tracking-widest font-bold text-white hover:text-yellow-500 transition-colors whitespace-nowrap">Contact</a>
+                </div>
+
+                <a href="#contact" class="flex-shrink-0 px-3 lg:px-6 py-1.5 lg:py-2 border-2 border-yellow-500 text-yellow-500 text-[8px] lg:text-[11px] uppercase tracking-tighter lg:tracking-widest font-black hover:bg-yellow-500 hover:text-black transition-all active:scale-90">
+                    TALK
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[100vh] flex flex-col justify-center items-center text-center px-6 pt-24 lg:pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop" alt="Logistics Truck" class="w-full h-full object-cover opacity-40 lg:opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black"></div>
+        </div>
+
+        <div class="relative z-10 w-full max-w-4xl reveal-card">
+            <div class="inline-block px-4 py-1 border border-yellow-500/30 rounded-full mb-6 bg-yellow-500/5 animate-float">
+                <span class="text-[7px] lg:text-[8px] uppercase tracking-[0.3em] text-yellow-500 font-bold">Reliable Southern Africa Freight</span>
+            </div>
+
+            <h2 class="text-4xl md:text-8xl font-extrabold mb-6 tracking-tighter leading-[1.1] text-white">
+                DELIVERING TRUST.<br><span class="text-yellow-500 font-normal italic">DRIVING EXCELLENCE.</span>
+            </h2>
+
+            <p class="max-w-xs lg:max-w-md mx-auto text-slate-300 text-xs lg:text-sm mb-10 font-light leading-relaxed">
+                To provide reliable, fast, and cost-effective logistics solutions that connect businesses across Africa and the world.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 w-full max-w-[280px] md:max-w-none justify-center mx-auto">
+                <a href="#contact" class="flex-1 md:flex-none md:px-12 bg-yellow-500 text-black py-4 rounded-full font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-yellow-400 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] transition-all active:scale-95 text-center">
+                    Start Dispatch
+                </a>
+                <a href="#services" class="flex-1 md:flex-none md:px-12 backdrop-blur-md bg-white/5 border border-white/10 py-4 rounded-full font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-white/10 transition-all text-center">
+                    Our Fleet
+                </a>
+            </div>
+        </div>
+
+        <div class="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 opacity-20 animate-bounce">
+            <div class="w-[1px] h-12 bg-gradient-to-b from-yellow-500 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Professional About Section -->
+    <section id="about" class="py-20 px-6 border-y border-white/5 bg-white/[0.01] relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-500/5 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+
+        <div class="max-w-7xl mx-auto reveal-card">
+            <div class="flex flex-col gap-12">
+                <div class="flex-1">
+                    <h3 class="text-[10px] uppercase tracking-[0.5em] text-yellow-500 font-bold mb-6 flex items-center gap-4">
+                        <span class="w-8 h-[1px] bg-yellow-500"></span> The Standard in Logistics
+                    </h3>
+
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-8 tracking-tighter leading-tight">
+                        Abubakari Logistics: <br>
+                        <span class="text-slate-500">Based in Dar es Salaam.</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-lg leading-relaxed mb-8 font-light italic border-l-2 border-yellow-500 pl-6 hover:border-white transition-colors">
+                        "Abubakari Logistics is a professional logistics and transportation company providing reliable local and international services across Southern and East Africa."
+                    </p>
+
+                    <div class="space-y-6 text-slate-400 text-sm leading-relaxed">
+                        <p>We specialize in the efficient, secure, and cost-effective movement of goods for businesses and individuals. With strong regional connections and industry expertise, we ensure smooth cross-border operations and timely delivery.</p>
+                        <p>At Abubakari Logistics, we are committed to professionalism, transparency, and customer satisfaction—making us a trusted partner in the logistics industry.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-6 bg-[#0a0a0a] border border-white/5 rounded-2xl hover:border-yellow-500/30 transition-all duration-500 group">
+                        <div class="text-yellow-500 mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-2">Secure Movement</h4>
+                        <p class="text-slate-500 text-xs font-light">Industry-leading safety protocols for every ton of cargo.</p>
+                    </div>
+
+                    <div class="p-6 bg-[#0a0a0a] border border-white/5 rounded-2xl hover:border-yellow-500/30 transition-all duration-500 group">
+                        <div class="text-yellow-500 mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-2">Cross-Border</h4>
+                        <p class="text-slate-500 text-xs font-light">Expert clearing and forwarding across SADC and EAC regions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Coverage Section -->
+    <section id="services-detailed" class="py-24 px-6 bg-[#050505]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 reveal-card">
+                <h3 class="text-[10px] uppercase tracking-[0.5em] text-yellow-500 font-bold mb-4">Core Solutions</h3>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter">Our Expertise.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="reveal-card group bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover-lift transition-all duration-500 shadow-2xl overflow-hidden relative">
+                    <div class="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="text-yellow-500 mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 icon-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-2.035-2.54A1 1 0 0 0 18.96 10H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3 tracking-tight group-hover:text-yellow-500 transition-colors">Local Transport</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed font-light group-hover:text-slate-300">Tanzania-wide distribution and local freight management.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="reveal-card group bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover-lift transition-all duration-500 shadow-2xl overflow-hidden relative">
+                    <div class="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="text-yellow-500 mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 icon-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3 tracking-tight group-hover:text-yellow-500 transition-colors">Cross-Border</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed font-light group-hover:text-slate-300">Reliable logistics across Southern and East African borders.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="reveal-card group bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover-lift transition-all duration-500 shadow-2xl overflow-hidden relative">
+                    <div class="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="text-yellow-500 mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 icon-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3 tracking-tight group-hover:text-yellow-500 transition-colors">Freight Forwarding</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed font-light group-hover:text-slate-300">Road, Air, and Sea solutions for global supply chains.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="reveal-card group bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover-lift transition-all duration-500 shadow-2xl overflow-hidden relative">
+                    <div class="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="text-yellow-500 mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 icon-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15h2a3 3 0 1 0 0-6h-3c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h4"/><path d="M12 1v22"/><path d="M17 15h1a3 3 0 0 0 0-6h-1"/></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3 tracking-tight group-hover:text-yellow-500 transition-colors">Import & Export</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed font-light group-hover:text-slate-300">Comprehensive trade services for global commerce.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="reveal-card group bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover-lift transition-all duration-500 shadow-2xl overflow-hidden relative">
+                    <div class="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="text-yellow-500 mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 icon-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3 tracking-tight group-hover:text-yellow-500 transition-colors">Customs Clearance</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed font-light group-hover:text-slate-300">Fast-track documentation and regulatory compliance.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="reveal-card group bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover-lift transition-all duration-500 shadow-2xl overflow-hidden relative">
+                    <div class="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="text-yellow-500 mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 icon-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3 tracking-tight group-hover:text-yellow-500 transition-colors">Door-to-Door</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed font-light group-hover:text-slate-300">Precise end-to-end delivery to any destination.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Areas -->
+    <section class="px-6 py-12">
+        <div class="max-w-7xl mx-auto reveal-card">
+            <div class="bg-white/[0.02] border border-white/5 p-10 rounded-[2.5rem] relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-5 text-yellow-500 group-hover:opacity-20 transition-all duration-700 group-hover:scale-150">
+                    <svg width="120" height="120" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                </div>
+
+                <h3 class="text-[10px] uppercase tracking-[0.4em] text-yellow-500 font-bold mb-6">Global Coverage</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="hover:translate-x-2 transition-transform">
+                        <h4 class="text-white font-bold mb-2">Southern Africa</h4>
+                        <p class="text-xs text-slate-500 font-light leading-relaxed">Zambia, South Africa, Botswana, Namibia, and Zimbabwe corridors.</p>
+                    </div>
+                    <div class="hover:translate-x-2 transition-transform">
+                        <h4 class="text-white font-bold mb-2">East Africa</h4>
+                        <p class="text-xs text-slate-500 font-light leading-relaxed">Tanzania, Kenya, Uganda, Rwanda, and Burundi networks.</p>
+                    </div>
+                    <div class="hover:translate-x-2 transition-transform">
+                        <h4 class="text-white font-bold mb-2">International</h4>
+                        <p class="text-xs text-slate-500 font-light leading-relaxed">Seamless shipping worldwide via sea and air freight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="reveal-card p-10 rounded-[2rem] bg-gradient-to-br from-yellow-500/10 to-transparent border border-yellow-500/10 hover:border-yellow-500/40 transition-all">
+                <h3 class="text-xl font-bold mb-4 italic text-yellow-500">Our Mission</h3>
+                <p class="text-sm text-slate-400 leading-relaxed font-light">
+                    To provide reliable, fast, and cost-effective logistics solutions that connect businesses across Africa and the world.
+                </p>
+            </div>
+
+            <div class="reveal-card p-10 rounded-[2rem] bg-gradient-to-br from-white/5 to-transparent border border-white/5 hover:border-white/20 transition-all">
+                <h3 class="text-xl font-bold mb-4 italic">Our Vision</h3>
+                <p class="text-sm text-slate-400 leading-relaxed font-light">
+                    To become a leading logistics company in Africa, known for excellence, reliability, and innovation in supply chain solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet/Services Section -->
+    <section id="services" class="py-16 px-6 bg-[#050505]">
+        <div class="max-w-7xl mx-auto reveal-card">
+            <h3 class="text-[9px] uppercase tracking-[0.4em] text-yellow-500 font-bold mb-2">Our Specialized Fleet</h3>
+            <h4 class="text-2xl font-bold mb-10 tracking-tighter">Heavy-Duty Road Solutions.</h4>
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Content will be injected by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 reveal-card">
+            <div class="flex-1">
+                <h3 class="text-4xl font-bold mb-6 tracking-tighter text-yellow-500">Let's talk</h3>
+                <p class="text-slate-400 mb-8 font-light">Available for logistics projects and cross-border collaborations.</p>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-center gap-3 group">
+                        <span class="text-yellow-500 group-hover:scale-125 transition-transform">✉</span>
+                        <a href="mailto:jacksonnsongadevlog@gmail.com" class="hover:text-yellow-500 transition-colors">jacksonnsongadevlog@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-500"></span>
+                        <span>Dar es Salaam, Tanzania</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1">
+                <form action="https://formspree.io/f/xvzlzlok" method="POST" id="dispatchForm" class="space-y-4">
+                    <input type="text" name="name" placeholder="Your Name" required class="w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-5 py-4 focus:border-yellow-500 outline-none text-sm transition-all">
+                    <input type="email" name="email" placeholder="Your Email" required class="w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-5 py-4 focus:border-yellow-500 outline-none text-sm transition-all">
+                    <textarea name="message" placeholder="Load Details & Route" required class="w-full bg-[#0a0a0a] border border-white/10 rounded-2xl px-5 py-4 focus:border-yellow-500 outline-none h-40 text-sm resize-none transition-all"></textarea>
+                    <button type="submit" id="submitBtn" class="bg-yellow-500 text-black w-full py-4 rounded-full font-bold uppercase text-[10px] tracking-widest hover:bg-yellow-400 hover:shadow-lg transition-all active:scale-95">
+                        Submit now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-20 pb-10 px-6 border-t border-white/5 bg-[#030303]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div class="space-y-6">
+                    <div class="inline-block p-1 rounded-full border border-white/10 bg-white/5">
+                        <img src="assets/images/logo.jpg" alt="Logo" class="h-14 w-14 lg:h-20 lg:w-20 rounded-full border border-yellow-500/50 object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-xs font-light">
+                        Connecting the Southern & East African corridors with precision and trust.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-[10px] uppercase tracking-[0.4em] text-yellow-500 font-bold">Find Us</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 hover:translate-x-2 transition-transform">
+                            <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="text-xs text-slate-400 leading-relaxed font-light">
+                                <strong class="text-white block mb-1">Headquarters</strong> Tanga Road, Dar es Salaam,<br> Tanzania
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-[10px] uppercase tracking-[0.4em] text-yellow-500 font-bold">Connect</h4>
+                    <div class="space-y-4 text-xs">
+                        <a href="https://api.whatsapp.com/send?phone=260779495904" target="_blank" class="flex items-center gap-4 text-slate-400 hover:text-yellow-500 transition-colors group">
+                            <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500 group-hover:bg-yellow-500 group-hover:text-black transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            +260 779 495 904
+                        </a>
+
+                        <a href="mailto:info@abubakari-logistics.com" class="flex items-center gap-4 text-slate-400 hover:text-yellow-500 transition-colors group">
+                            <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500 group-hover:bg-yellow-500 group-hover:text-black transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            info@abubakari-logistics.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[8px] uppercase tracking-[0.3em] text-slate-600">
+                <p>&copy; 2026 Abubakari Logistics. All Rights Reserved.</p>
+                <p class="hover:text-yellow-500 transition-colors">Moving Goods. Managing Trust.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Toggle -->
+    <a href="https://api.whatsapp.com/send?phone=260779495904" target="_blank" class="fixed bottom-6 right-6 z-[100] bg-yellow-500 text-black w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 hover:rotate-[360deg] duration-500 active:scale-95 group">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Intersection Observer Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-card').forEach(el => observer.observe(el));
+        });
+    </script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
