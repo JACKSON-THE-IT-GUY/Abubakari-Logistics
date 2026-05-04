@@ -6,17 +6,17 @@
 const fleet = [{
         title: "Pan Double Trailers",
         desc: "Maximum volume capacity for long-distance Southern Africa routes.",
-        image: "assets/images/double trailor.jpg"
+        image: "assets/images/double trailers.jpeg"
     },
     {
         title: "Single Trailers",
         desc: "Versatile regional distribution for standard palletized cargo.",
-        image: "assets/images/single trailer.png"
+        image: "assets/images/main.jpeg"
     },
     {
         title: "Container Transport",
         desc: "Specialized logistics for 20ft and 40ft international containers.",
-        image: "assets/images/container.jpg"
+        image: "assets/images/flayer1.jpg"
     },
     {
         title: "Tipper Trucks",
