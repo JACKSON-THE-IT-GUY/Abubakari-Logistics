@@ -94,6 +94,13 @@
                 transform: rotate(12deg) scale(1.1);
             }
         }
+        
+         :root {
+            --primary-blue: #0B1220;
+            --gold: #D4AF37;
+            --silver: #C0C0C0;
+            --white: #FFFFFF;
+        }
     </style>
 </head>
 
@@ -359,7 +366,7 @@
                 <div class="space-y-4 text-sm">
                     <div class="flex items-center gap-3 group">
                         <span class="text-yellow-500 group-hover:scale-125 transition-transform">✉</span>
-                        <a href="mailto:jacksonnsongadevlog@gmail.com" class="hover:text-yellow-500 transition-colors">jacksonnsongadevlog@gmail.com</a>
+                        <a href="mailto:info@abubakari-logistics.com" class="hover:text-yellow-500 transition-colors">info@abubakari-logistics.com</a>
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="text-yellow-500"></span>
@@ -381,39 +388,62 @@
         </div>
     </section>
 
-
-    <footer class="footer" style="background: #1a1a1a; color: #fff; padding: 60px 0 20px; font-family: 'Poppins', sans-serif;">
-        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-
-            <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 40px;">
-
-                <!-- Company Info -->
-                <div class="footer-section">
-                    <h3 style="color: #ff4d4d; margin-bottom: 20px;">Abubakari Logistics</h3>
-                    <p style="line-height: 1.6; color: #ccc;">Premier transport and logistics provider based in Tanzania, dedicated to moving your business forward with reliability and precision.</p>
+    <!-- Footer -->
+    <footer class="pt-20 pb-10 px-6 border-t border-white/5 bg-[#030303]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div class="space-y-6">
+                    <div class="inline-block p-1 rounded-full border border-white/10 bg-white/5">
+                        <img src="assets/images/logo.jpg" alt="Logo" class="h-14 w-14 lg:h-20 lg:w-20 rounded-full border border-yellow-500/50 object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-xs font-light">
+                        Abubakari
+                        <Logistics><br></Logistics> Premier transport and logistics provider based in Tanzania, dedicated to moving your business forward with reliability and precision.
+                        <p class="text-slate-400 text-xs leading-relaxed max-w-xs font-light">
+                            Connecting the Southern & East African corridors with precision and trust.
+                        </p>
                 </div>
 
-                <!-- Contact Details (Everything integrated here) -->
-                <div class="footer-section">
-                    <h4 style="margin-bottom: 20px; border-bottom: 2px solid #ff4d4d; display: inline-block; padding-bottom: 5px;">Contact Details</h4>
-                    <p style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-map-marker-alt" style="color: #ff4d4d; margin-right: 10px;"></i> <strong>Location:</strong> Dar es Salaam, Tanzania</p>
-                    <p style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-road" style="color: #ff4d4d; margin-right: 10px;"></i> <strong>Address:</strong> Tanga Road, Dar es Salaam</p>
-                    <p style="margin-bottom: 10px; color: #ccc;"><i class="fab fa-whatsapp" style="color: #25d366; margin-right: 10px;"></i> <strong>Phone/WhatsApp:</strong> <a href="https://wa.me/255790713519" style="color: #ccc; text-decoration: none;">+255 790 713 519</a></p>
-                    <p style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-envelope" style="color: #ff4d4d; margin-right: 10px;"></i> <strong>Email:</strong> <a href="mailto:info@abubakari-logistics.com" style="color: #ccc; text-decoration: none;">info@abubakari-logistics.com</a></p>
+                <div class="space-y-6">
+                    <h4 class="text-[10px] uppercase tracking-[0.4em] text-yellow-500 font-bold">Find Us</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 hover:translate-x-2 transition-transform">
+                            <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="text-xs text-slate-400 leading-relaxed font-light">
+                                <strong class="text-white block mb-1">Headquarters</strong> Tanga Road, Dar es Salaam.<br><strong class="text-white block mt-3 mb-1"><address></address></strong> Dar es Salaam, Tanzania.
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="space-y-6">
+                    <h4 class="text-[10px] uppercase tracking-[0.4em] text-yellow-500 font-bold">Connect</h4>
+                    <div class="space-y-4 text-xs">
+                        <a href="https://api.whatsapp.com/send?phone=255790713519" target="_blank" class="flex items-center gap-4 text-slate-400 hover:text-yellow-500 transition-colors group">
+                            <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500 group-hover:bg-yellow-500 group-hover:text-black transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2  
+
+                        <a href="mailto:info@abubakari-logistics.com" class="flex items-center gap-4 text-slate-400 hover:text-yellow-500 transition-colors group">
+                            <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500 group-hover:bg-yellow-500 group-hover:text-black transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            info@abubakari-logistics.com
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <hr style="border: 0; border-top: 1px solid #333; margin-bottom: 20px;">
-            <div class="footer-bottom" style="text-align: center; color: #777; font-size: 0.9rem;">
-                <p>&copy; 2024 Abubakari Logistics. All Rights Reserved.</p>
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[8px] uppercase tracking-[0.3em] text-slate-600">
+                <p>&copy; 2026 Abubakari Logistics. All Rights Reserved.</p>
+                <p class="hover:text-yellow-500 transition-colors">Moving Goods. Managing Trust.</p>
             </div>
-
         </div>
     </footer>
 
     <!-- WhatsApp Toggle -->
-    <a href="https://api.whatsapp.com/send?phone=260779495904" target="_blank" class="fixed bottom-6 right-6 z-[100] bg-yellow-500 text-black w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 hover:rotate-[360deg] duration-500 active:scale-95 group">
+    <a href="https://api.whatsapp.com/send?phone=255790713519" target="_blank" class="fixed bottom-6 right-6 z-[100] bg-yellow-500 text-black w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 hover:rotate-[360deg] duration-500 active:scale-95 group">
         <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
